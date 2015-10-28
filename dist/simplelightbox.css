@@ -1,6 +1,6 @@
 /* line 1, ../sass/simplelightbox.scss */
 .sl-overlay {
-  position: fixed;
+  position: absolute;
   left: 0;
   right: 0;
   top: 0;
@@ -9,6 +9,10 @@
   opacity: 0.7;
   display: none;
   z-index: 1006;
+}
+
+.sl-overlay.full-body {
+  position: fixed;
 }
 
 /* line 12, ../sass/simplelightbox.scss */
@@ -30,7 +34,7 @@
 /* line 25, ../sass/simplelightbox.scss */
 .sl-wrapper .sl-close {
   display: none;
-  position: fixed;
+  position: absolute;
   right: 30px;
   top: 30px;
   z-index: 1015;
@@ -38,7 +42,7 @@
 /* line 33, ../sass/simplelightbox.scss */
 .sl-wrapper .sl-counter {
   display: none;
-  position: fixed;
+  position: absolute;
   top: 30px;
   left: 30px;
   z-index: 1015;
@@ -50,7 +54,7 @@
 }
 /* line 44, ../sass/simplelightbox.scss */
 .sl-wrapper .sl-navigation button {
-  position: fixed;
+  position: absolute;
   top: 50%;
   margin-top: -10px;
   height: 30px;
@@ -70,7 +74,7 @@
 }
 /* line 64, ../sass/simplelightbox.scss */
 .sl-wrapper .sl-image {
-  position: fixed;
+  position: absolute;
   -ms-touch-action: none;
   touch-action: none;
   z-index: 10000;
@@ -112,7 +116,7 @@
   left: 50%;
   margin: -20px 0 0 -20px;
   opacity: 0;
-  position: fixed;
+  position: absolute;
   top: 50%;
   width: 40px;
   z-index: 1007;

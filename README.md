@@ -20,6 +20,7 @@ var lightbox = $('.gallery a').simpleLightbox(options);
 | Property | Default | Type | Description |
 | -------- | ------- | ---- | ----------- |
 | overlay | true | bool | show an overlay or not |
+| container | 'body' | string | css selector for element within which lightbox should be displayed |
 | spinner | true | bool | show spinner or not |
 | nav | true | bool | show arrow-navigation or not |
 | navText | ['&larr;','&rarr;'] | array | text or html for the navigation arrows |
