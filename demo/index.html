@@ -41,7 +41,7 @@
 <script>
 
   function assignRandomCaptions() {
-    var words = "this is an awesome gallery i really love it don't you absolutey should ok bye".split(" ");
+    var words = "this is an awesome gallery i really love it".split(" ");
     $("a img").each(function() {
       $(this).attr("title", function() {
         var count = Math.round(Math.random() * 200);
@@ -55,7 +55,7 @@
   }
 	$(function() {
     assignRandomCaptions();
-		var gallery = $('.gallery a').simpleLightbox({container: ".gallery"});
+		var gallery = $('.gallery a').simpleLightbox({container: ".gallery", captionPosition: "right"});
 	});
 </script>
 </body>
