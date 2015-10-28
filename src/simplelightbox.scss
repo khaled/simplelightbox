@@ -82,9 +82,19 @@
       background: #000;
       opacity: 0.8;
       position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
+
+      &.sl-caption-bottom {
+        bottom: 0;
+        left: 0;
+        right: 0;
+      }
+
+      &.sl-caption-right {
+        top: 0;
+        bottom: 0;
+        right: 0;
+        width: 25%;
+      }
     }
 
     .sl-download {
